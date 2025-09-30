@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'ProductSans';
+    src: url('fonts/productsans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+body {
+    font-family: 'ProductSans';
+    color: #FFFFFF;
+    background-color: #1C0F00;
+    padding: 0;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    /* 禁用移动端长按时的默认行为，如弹出菜单或选择文本 */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #FFA000;
+}
+
+#warning {
+    border-radius: 25px;
+    backdrop-filter: blur(4px) brightness(99%);
+    background-color: rgba(200, 200, 200, 0.4);
+    width: 97%;
+    height: 95%;
+    padding: 5%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+}
+#ads {
+	background: #666666;
+	padding: 2%;
+	border-radius: 15px;
+}
+#page {
+padding: 1%;
+	text-align: center;
+}
+#jm {
+padding: 3%;
+background-color: #5A5A5A;
+border-radius: 15px;
+}
+#room {
+padding: 3%;
+background-color: #5A5A5A;
+border-radius: 15px;
+}
