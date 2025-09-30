@@ -4,14 +4,16 @@
     font-weight: normal;
     font-style: normal;
 }
+
 a {
-	color: #FFFFFF;
-	text-decoration: none;
+    color: #FFFFFF;
+    text-decoration: none;
 }
+
 body {
     font-family: 'ProductSans';
     color: #FFFFFF;
-    background-color: #1C0F00;
+    background-color: #000000;
     padding: 0;
 }
 
@@ -37,22 +39,30 @@ button {
     position: fixed;
     z-index: 9999;
 }
+
 #ads {
-	background: #666666;
-	padding: 2%;
-	border-radius: 15px;
+    background: #666666;
+    padding: 2%;
+    border-radius: 15px;
 }
+
 #page {
-padding: 1%;
-	text-align: center;
+    padding: 1%;
+    text-align: center;
 }
+
 #jm {
-padding: 3%;
-background-color: #5A5A5A;
-border-radius: 15px;
+    padding: 3%;
+    background-color: #5A5A5A;
+    border-radius: 15px;
 }
+
 #room {
-padding: 3%;
-background-color: #5A5A5A;
-border-radius: 15px;
+    padding: 3%;
+    background-color: #5A5A5A;
+    border-radius: 15px;
+}
+#warning-button {
+	text-align: center;
+	padding: 3%;
 }
