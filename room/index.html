@@ -70,8 +70,7 @@
 </body>
 
 <script>
-    // 假设 SUBMIT_BASE = 'http://192.168.10.102:8080'
-    const SUBMIT_BASE = 'http://192.168.10.102:8080';
+    const SUBMIT_BASE = 'https://develop-round-hung-flat.trycloudflare.com';
 
     async function sendAndRefresh(text) {
         // POST 写入
@@ -117,7 +116,7 @@
         const latest = await getResp.text();
         document.getElementById('result').innerText = latest;
         console.log("已刷新")
-    }, 500)
+    }, 10)
 </script>
 
 </html>
