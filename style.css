@@ -40,29 +40,77 @@ button {
     z-index: 9999;
 }
 
-#ads {
-    background: #666666;
-    padding: 2%;
-    border-radius: 15px;
-}
-
-#page {
-    padding: 1%;
-    text-align: center;
-}
-
-#jm {
-    padding: 3%;
-    background-color: #5A5A5A;
-    border-radius: 15px;
-}
-
-#room {
-    padding: 3%;
-    background-color: #5A5A5A;
-    border-radius: 15px;
-}
 #warning-button {
-	text-align: center;
-	padding: 3%;
+    text-align: center;
+    padding: 3%;
+}
+
+#inputBox {
+    position: fixed;
+    bottom: 5%;          
+    left: 0;
+    width: 100%;
+    padding: 10px;       /* 适当的内边距 */
+    box-sizing: border-box; /* 关键：让padding包含在width内，防止撑开屏幕 */
+    background-color: #000000; /* 背景黑色，防止文字重叠 */
+    display: flex;       /* 使用弹性布局 */
+    justify-content: center; /* 内容居中 */
+    align-items: center; /* 垂直居中 */
+    gap: 10px;           /* 输入框和按钮之间的间距 */
+    z-index: 100;        /* 确保在最上层 */
+}
+
+/* 输入框样式 */
+#msgInput {
+    flex: 1;             /* 自动占据剩余空间 */
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    outline: none;
+    height: 40px;        /* 固定高度 */
+    box-sizing: border-box;
+}
+
+/* 发送按钮样式 */
+#sendButton {
+    width: 80px;         /* 固定按钮宽度 */
+    height: 40px;
+    padding: 0;     
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* 聊天记录滚动区域 */
+#chatHistory {
+    /*高度：总屏高- 顶部标题区预估高度- 底部输入框高度 */
+    height: calc(100vh - 160px); 
+    
+    width: 100%;
+    overflow-y: auto;    /* 允许垂直滚动 */
+    padding: 10px;
+    padding-bottom: 60px; /* 底部留白，防止最后一条消息被输入框挡住 */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* 消息从上到下排列 */
+    gap: 10px; /* 消息之间的间距 */
+}
+
+/*消息气泡样式*/
+.message {
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    color: #fff;
+}
+.message.other {
+    background-color: #333;
+    align-self: flex-start; /*(细节)对方消息靠左 */
+}
+
+.message.me {
+    background-color: #FF8900;
+    color: #000;
+    align-self: flex-end;   /*(细节)我的消息靠右 */
 }
