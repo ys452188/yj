@@ -12,7 +12,7 @@ function warning_exit() { //警告弹窗下的"关闭"按钮(可能无效)
 }
 
 
-const URL = "http://127.0.0.1:8080"
+const URL = "https://broadcast-legislation-marilyn-wood.trycloudflare.com"
 const DELAY = 60; //刷新间隔
 
 var name;
